@@ -1,0 +1,546 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/Jy8KnJzE5j7w/iQ4Dl78esS2Dgs</id>
+  <title>arXiv Query: search_query=&amp;id_list=2507.13334,2604.25850,2605.02092,2605.12129,2605.12239,2605.13357,2605.15221,2605.18747,2605.21516,2606.03461,2606.08610,2606.28679,2606.29116,2606.30317,2606.30546&amp;start=0&amp;max_results=50</title>
+  <updated>2026-07-01T12:00:30Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=50&amp;id_list=2507.13334,2604.25850,2605.02092,2605.12129,2605.12239,2605.13357,2605.15221,2605.18747,2605.21516,2606.03461,2606.08610,2606.28679,2606.29116,2606.30317,2606.30546" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>50</opensearch:itemsPerPage>
+  <opensearch:totalResults>15</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2605.21516v1</id>
+    <title>Harnesses for Inference-Time Alignment over Execution Trajectories</title>
+    <updated>2026-05-15T12:47:13Z</updated>
+    <link href="https://arxiv.org/abs/2605.21516v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.21516v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Harness engineering has emerged as an important inference-time technique for large language model (LLM) agents, aiming to improve long-term performance through task decomposition and guided execution. However, more elaborate harnesses are not uniformly better: increasing decomposition or guidance can sometimes improve execution, but can also reduce final task success. We study harness design through the lens of inference-time trajectory alignment. This perspective separates harness into two mechanisms: task decomposition, which structures a task into sub-goals, and guided execution, which reshapes local action distributions during execution. This decomposition allows us to quantify how workflow granularity, retry budgets, and guidance-induced action reweighting shape the performance limits of harness design. It further reveals concrete failure modes, including over-decomposition, over-pruning, and hallucinated execution. We validate these predictions through controlled synthetic experiments and real terminal agent benchmarks. Inspired by the theory, we further show that effective harnesses can be partial: specifying only the initial steps and leaving the remaining execution to agent can achieve higher pass rate than fully structured workflows.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-15T12:47:13Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Boyuan Wang</name>
+    </author>
+    <author>
+      <name>Bochao Li</name>
+    </author>
+    <author>
+      <name>Minghan Wang</name>
+    </author>
+    <author>
+      <name>Yuxin Tao</name>
+    </author>
+    <author>
+      <name>Fang Kong</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.08610v1</id>
+    <title>HARBOR: A Harness Framework for Agentic Robot Reinforcement Learning</title>
+    <updated>2026-06-07T12:49:33Z</updated>
+    <link href="https://arxiv.org/abs/2606.08610v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.08610v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Reinforcement learning (RL) has become a powerful paradigm for robot learning, particularly in sim-to-real settings, but its broader adoption remains limited by the engineering pipeline surrounding the algorithms. Building tasks, shaping rewards, and tuning hyperparameters require substantial expert effort, making RL workflows costly and difficult to scale. We introduce HARBOR, an agentic framework that frames robot RL automation as a harness-engineering problem: given a simulator codebase and a task specification, it automates the workflow from environment setup to policy training in simulation. HARBOR decomposes such high-level objectives into bounded stages executed by specialized agents through standardized commands, persistent artifacts, executable gates, and reusable knowledge, and scales iteration via decentralized parallel trials and experience learning across runs. We evaluate HARBOR across 6 benchmarks and 16 tasks in total, spanning manipulation, locomotion, and bimanual dexterous control. We demonstrate that HARBOR automates the simulation RL workflow end-to-end, designs rewards, tunes algorithms to match or improve over default configurations, and reduces engineering effort at practical token and wall-clock cost; the resulting policies can also be transferred to real robots.</summary>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-07T12:49:33Z</published>
+    <arxiv:primary_category term="cs.RO"/>
+    <author>
+      <name>Zechu Li</name>
+    </author>
+    <author>
+      <name>Yufeng Jin</name>
+    </author>
+    <author>
+      <name>Xiaoyang Liu</name>
+    </author>
+    <author>
+      <name>Puze Liu</name>
+    </author>
+    <author>
+      <name>Vignesh Prasad</name>
+    </author>
+    <author>
+      <name>Carlo D'Eramo</name>
+    </author>
+    <author>
+      <name>Georgia Chalvatzaki</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.13357v1</id>
+    <title>AI Harness Engineering: A Runtime Substrate for Foundation-Model Software Agents</title>
+    <updated>2026-05-13T11:14:59Z</updated>
+    <link href="https://arxiv.org/abs/2605.13357v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.13357v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Foundation models have transformed automated code generation, yet autonomous software-engineering agents remain unreliable in realistic development settings. The dominant explanation locates this gap in model capability. We propose a different locus: software-engineering capability emerges from a model-harness-environment system, in which a runtime substrate -- the harness -- mediates how a foundation-model agent observes a project, acts on it, receives feedback, and establishes that a change is complete. We formalize this substrate as an AI Harness Engineering and identify eleven component responsibilities: task specification, context selection, tool access, project memory, task state, observability, failure attribution, verification, permissions, entropy auditing, and intervention recording. We operationalize the harness through a four-level ladder (H0-H3) that progressively exposes runtime support to the agent, and we propose a trace-based evaluation protocol that converts each agent run into an auditable episode package. Applied to a controlled validation task, the framework yields episode packages whose evidence structure varies systematically with harness level: lower levels produce only a final patch, higher levels produce reproduction logs, failure attributions, deterministic requirement checks, and structured verification reports. The framework reframes the central question of autonomous software engineering from whether a foundation model can produce a patch to whether the model-harness-environment system can produce a verifiably correct, attributed, and maintainable change. We outline a research program for the runtime systems that foundation-model software agents will require.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-13T11:14:59Z</published>
+    <arxiv:comment>16 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Hailin Zhong</name>
+    </author>
+    <author>
+      <name>Shengxin Zhu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.30317v1</id>
+    <title>MCP Server Architecture Patterns for LLM-Integrated Applications</title>
+    <updated>2026-06-29T13:59:41Z</updated>
+    <link href="https://arxiv.org/abs/2606.30317v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.30317v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The Model Context Protocol (MCP), introduced by Anthropic in November 2024, defines a standardized interface for connecting large language models (LLMs) to external tools, data sources, and services. Within months of release, hundreds of community-built MCP servers appeared on GitHub, but no software-maintenance literature has yet described how the ecosystem is being structured in production. This industry experience paper catalogues five recurring MCP server architectural patterns observed across an enumerated corpus of fifteen independently developed servers (five production servers from the ANSYR voice AI platform plus ten public servers from the official MCP registry): Resource Gateway, Tool Orchestrator, Stateful Session Server, Proxy Aggregator, and Domain-Specific Adapter. Each pattern is described in the structured form of Gamma et al.: context, problem, solution, and consequences. We also document four anti-patterns and a set of cross-cutting concerns around authentication, versioning, and observability. The quantitative evaluation contributes three measurements: inter-rater reliability of the taxonomy across two independent LLM raters on 54 held-out servers (Cohen's kappa = 0.76), which also localizes three pattern-boundary ambiguities; transport overhead measured end-to-end on loopback and modeled for cross-host paths; and a tool-count study showing tool-selection accuracy drops below 90% between 10 and 15 tools per context for Claude Haiku 4.5 and between 20 and 30 tools for Sonnet 4. Code, corpus, and prompts are released as a replication package.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-29T13:59:41Z</published>
+    <arxiv:comment>9 pages, IEEEtran conference format, 2 figures. Extended version; a condensed version is under review at IEEE Software. Replication package: https://github.com/rodriguescarson/mcp-patterns-icsme2026</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Carson Rodrigues</name>
+    </author>
+    <author>
+      <name>Oysturn Vas</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2507.13334v2</id>
+    <title>A Survey of Context Engineering for Large Language Models</title>
+    <updated>2025-07-21T17:48:18Z</updated>
+    <link href="https://arxiv.org/abs/2507.13334v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2507.13334v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The performance of Large Language Models (LLMs) is fundamentally determined by the contextual information provided during inference. This survey introduces Context Engineering, a formal discipline that transcends simple prompt design to encompass the systematic optimization of information payloads for LLMs. We present a comprehensive taxonomy decomposing Context Engineering into its foundational components and the sophisticated implementations that integrate them into intelligent systems. We first examine the foundational components: context retrieval and generation, context processing and context management. We then explore how these components are architecturally integrated to create sophisticated system implementations: retrieval-augmented generation (RAG), memory systems and tool-integrated reasoning, and multi-agent systems. Through this systematic analysis of over 1400 research papers, our survey not only establishes a technical roadmap for the field but also reveals a critical research gap: a fundamental asymmetry exists between model capabilities. While current models, augmented by advanced context engineering, demonstrate remarkable proficiency in understanding complex contexts, they exhibit pronounced limitations in generating equally sophisticated, long-form outputs. Addressing this gap is a defining priority for future research. Ultimately, this survey provides a unified framework for both researchers and engineers advancing context-aware AI.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-17T17:50:36Z</published>
+    <arxiv:comment>ongoing work; 166 pages, 1411 citations</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Lingrui Mei</name>
+    </author>
+    <author>
+      <name>Jiayu Yao</name>
+    </author>
+    <author>
+      <name>Yuyao Ge</name>
+    </author>
+    <author>
+      <name>Yiwei Wang</name>
+    </author>
+    <author>
+      <name>Baolong Bi</name>
+    </author>
+    <author>
+      <name>Yujun Cai</name>
+    </author>
+    <author>
+      <name>Jiazhi Liu</name>
+    </author>
+    <author>
+      <name>Mingyu Li</name>
+    </author>
+    <author>
+      <name>Zhong-Zhi Li</name>
+    </author>
+    <author>
+      <name>Duzhen Zhang</name>
+    </author>
+    <author>
+      <name>Chenlin Zhou</name>
+    </author>
+    <author>
+      <name>Jiayi Mao</name>
+    </author>
+    <author>
+      <name>Tianze Xia</name>
+    </author>
+    <author>
+      <name>Jiafeng Guo</name>
+    </author>
+    <author>
+      <name>Shenghua Liu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.02092v1</id>
+    <title>NORA: A Harness-Engineered Autonomous Research Agent for End-to-End Spatial Data Science</title>
+    <updated>2026-05-03T23:22:01Z</updated>
+    <link href="https://arxiv.org/abs/2605.02092v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.02092v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The automation of scientific research workflows has emerged as a transformative frontier in artificial intelligence, yet existing autonomous research agents remain largely domain-agnostic, lacking the specialized reasoning, method selection, and data acquisition capabilities required for rigorous spatial data science. This paper introduces NORA (Night Owl Research Agent), a harness-engineered, multi-agent autonomous research system purpose-built for GIScience and spatial data science. NORA orchestrates the complete research lifecycle through a skills-first architecture comprising 21 domain-specialized workflow skills, 9 specialist sub-agents, and custom Model Context Protocol (MCP) servers. Central to the system's design are two novel domain-specialized skills: a spatial analysis skill unit that encodes decision frameworks for exploratory spatial data analysis, spatial regression, and diagnostics; and a spatial data download skill that supports reproducible acquisition from authoritative geospatial data sources. We formalize the concept of harness engineering for scientific research agents, demonstrating how lifecycle hooks, safety gates, generator-evaluator separation, human-in-the-loop, and state persistence ensure reliable and reproducible autonomous research. We evaluate NORA through case studies by 6 domain specialists and 3 LLM reviewers across seven dimensions (novelty, quality, rigor, etc). Results demonstrate that domain-specialized harness engineering substantially improves the efficiency and quality of research output compared to general-purpose agent configurations.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-03T23:22:01Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Bing Zhou</name>
+    </author>
+    <author>
+      <name>Xiao Huang</name>
+    </author>
+    <author>
+      <name>Huan Ning</name>
+    </author>
+    <author>
+      <name>Qiusheng Wu</name>
+    </author>
+    <author>
+      <name>Diya Li</name>
+    </author>
+    <author>
+      <name>Ziyi Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.25850v4</id>
+    <title>Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses</title>
+    <updated>2026-05-18T15:11:47Z</updated>
+    <link href="https://arxiv.org/abs/2604.25850v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.25850v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Harnesses are now central to coding-agent performance, mediating how models interact with tools and execution environments. Yet harness engineering remains a manual craft, because automating it faces a heterogeneous action space across editable components, voluminous trajectories that bury actionable signal, and edits whose effect is hard to attribute. We introduce Agentic Harness Engineering (AHE), a closed loop that addresses these challenges through three matched observability pillars: (1) component observability gives every editable harness component a file-level representation so the action space is explicit and revertible; (2) experience observability distills millions of raw trajectory tokens into a layered, drill-down evidence corpus that an evolving agent can actually consume; and (3) decision observability pairs every edit with a self-declared prediction, later verified against the next round's task-level outcomes. Together, these pillars turn every edit into a falsifiable contract, so harness evolution proceeds autonomously without collapsing into trial-and-error. Empirically, ten AHE iterations lift pass@1 on Terminal-Bench 2 from 69.7% to 77.0%, surpassing the human-designed harness Codex-CLI (71.9%) and the self-evolving baselines ACE and TF-GRPO. The frozen harness transfers without re-evolution: on SWE-bench-verified it tops aggregate success at 12% fewer tokens than the seed, and on Terminal-Bench 2 it yields +5.1 to +10.1pp cross-family gains across three alternate model families, indicating the evolved components encode general engineering experience rather than benchmark-specific tuning. Ablations localize the gain to tools, middleware, and long-term memory rather than the system prompt, suggesting factual harness structure transfers while prose-level strategy does not.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-28T16:55:02Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jiahang Lin</name>
+    </author>
+    <author>
+      <name>Shichun Liu</name>
+    </author>
+    <author>
+      <name>Chengjun Pan</name>
+    </author>
+    <author>
+      <name>Lizhi Lin</name>
+    </author>
+    <author>
+      <name>Shihan Dou</name>
+    </author>
+    <author>
+      <name>Zhiheng Xi</name>
+    </author>
+    <author>
+      <name>Xuanjing Huang</name>
+    </author>
+    <author>
+      <name>Hang Yan</name>
+    </author>
+    <author>
+      <name>Zhenhua Han</name>
+    </author>
+    <author>
+      <name>Tao Gui</name>
+    </author>
+    <author>
+      <name>Yu-Gang Jiang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.15221v1</id>
+    <title>Effective Harness Engineering for Algorithm Discovery with Coding Agents</title>
+    <updated>2026-05-13T06:33:06Z</updated>
+    <link href="https://arxiv.org/abs/2605.15221v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.15221v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>AlphaEvolve and FunSearch have demonstrated the potential of combining large language models (LLMs) with evolutionary search for automated algorithm discovery. However, discovery success is shaped not only by model capability but also significantly by the design of the execution infrastructure, i.e., the harness. This paper investigates effective harness design through three questions: under a fixed token budget, is it better to produce many algorithms with brief thought or fewer algorithms with deeper thought? How should the harness handle evaluation hacks, where generated programs exploit the scoring function? And how can agents that require full filesystem access execute safely in parallel? Using Vesper, an algorithm discovery framework that incorporates harness improvements addressing these questions, we evaluate on Circle Packing under the same token budget. Interestingly, generating fewer algorithms while thinking more deeply about each one achieved higher scores. That is, scaling the quality of each individual is more budget-efficient than scaling the number of evolutionary generations. Surprisingly, more capable models produced evaluation hacks at higher rates, making hack detection increasingly necessary as models scale.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-13T06:33:06Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Yoichi Ishibashi</name>
+    </author>
+    <author>
+      <name>Taro Yano</name>
+    </author>
+    <author>
+      <name>Masafumi Oyamada</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.12239v1</id>
+    <title>Harness Engineering as Categorical Architecture</title>
+    <updated>2026-05-12T15:09:46Z</updated>
+    <link href="https://arxiv.org/abs/2605.12239v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.12239v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The agent harness, the system layer comprising prompts, tools, memory, and orchestration logic that surrounds the model, has emerged as the central engineering abstraction for LLMbased agents. Yet harness design remains ad hoc, with no formal theory governing composition, preservation of properties under compilation, or systematic comparison across frameworks. We show that the categorical Architecture triple (G, Know, Phi) from the ArchAgents framework provides exactly this formalization. The four pillars of agent externalization (Memory, Skills, Protocols, Harness Engineering) map onto the triple's components: Memory as coalgebraic state, Skills as operad-composed objects, Protocols as syntactic wiring G, and the full Harness as the Architecture itself. Structural guarantees-integrity gates, quality-based escalation, supported convergence checks-are Know-level certificates whose preservation is structural replay: our compiler checks identity and verifier replay, not output-layer correctness or model behavior. We validate this correspondence with a reference implementation featuring compiler functors targeting Swarms, DeerFlow, Ralph, Scion, and LangGraph: the four configuration compilers preserve three named certificate types by identity or replay, and LangGraph preserves the same certificates through its shared per-stage execution path. The LangGraph compiler creates one node per stage using the same per-stage method as the native runtime, providing LangGraph-native observability without reimplementing harness logic. An end-to-end escalation experiment with real LLM agents confirms that the quality-based escalation control path is model-parametric in this two-model, one-task experiment. The result positions categorical architecture as the formal theory behind harness engineering.</summary>
+    <category term="cs.PL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.CT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-12T15:09:46Z</published>
+    <arxiv:primary_category term="cs.PL"/>
+    <author>
+      <name>Bogdan Banu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.29116v1</id>
+    <title>Characterizing Large Language Model Agentic Workflows: A Study on N8n Ecosystem</title>
+    <updated>2026-06-27T23:57:01Z</updated>
+    <link href="https://arxiv.org/abs/2606.29116v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.29116v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) are rapidly being adopted in low-code and no-code automation platforms, where non-expert users design workflows that combine natural language understanding with external services and APIs. LLM agents are LLM systems that use LLMs as a core "brain" to reason, plan, and autonomously execute complex, multi-step tasks. In this paper, we present the first large-scale empirical study of LLM agentic workflows in low-code automation platforms. We analyze more than 6,000 publicly available n8n workflows and examine four aspects of their design: task distribution, structural and tool use patterns, reliability mechanisms, and autonomy levels. Our analysis shows that LLM workflows are not merely prompt response pipelines. Instead, LLMs are commonly embedded within broader automation structures involving control logic, external tools, communication services, storage systems, and human review points. We further find that while many workflows include lightweight post-processing or routing logic after LLM execution, explicit reliability mechanisms such as structured fallback paths, repair loops, failure-specific alerts, and human approval gates remain relatively uncommon. These results reveal a gap between the increasing deployment of LLM agents in practical automation ecosystems and the limited engineering support for reliability, safety, and governance. Overall, our study provides ten empirical findings and five research takeaways for researchers, platform developers, and practitioners seeking to understand and improve real-world LLM agentic workflows.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-27T23:57:01Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Yutian Tang</name>
+    </author>
+    <author>
+      <name>Yuming Zhou</name>
+    </author>
+    <author>
+      <name>Huaming Chen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.03461v1</id>
+    <title>What Makes Interaction Trajectories Effective for Training Terminal Agents?</title>
+    <updated>2026-06-02T10:37:47Z</updated>
+    <link href="https://arxiv.org/abs/2606.03461v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.03461v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Stronger code agents are commonly assumed to be superior teachers for post-training, yet this assumption remains poorly disentangled from task difficulty, harness design, and student capacity. We investigate this pedagogical link using Terminal-Lego, a scalable pipeline that transforms multi-domain real-world issues into environment-verified agentic tasks. Surprisingly, standalone performance does not dictate teaching efficacy: while Claude Opus 4.6 achieves higher scores on Terminal-Bench 2.0, students fine-tuned on trajectories from DeepSeek-V3.2, a lower-scoring agent, exhibit significantly stronger generalization. We attribute this "pedagogical paradox" to Environment-Grounded Supervision (EGS): trajectories that explicitly expose inspect-act-verify behaviors through harness-visible interactions allow students to internalize robust problem-solving routines rather than fragile action sequences. Scaling analysis reveals exceptional data efficiency: with only 15.3k Terminal-Lego trajectories, for example, Qwen3-32B achieves a 24.3% score on Terminal-Bench 2.0, rivaling previous SOTA performance established with over 30x the data volume. Our results suggest that the frontier of agent post-training lies beyond mere outcome-matching, shifting the focus toward "Harness Engineering", where the systematic design of environment-grounded interaction structures serves as the primary catalyst for reproducible and generalizable agentic intelligence.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-02T10:37:47Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Sidi Yang</name>
+    </author>
+    <author>
+      <name>Chaofan Tao</name>
+    </author>
+    <author>
+      <name>Jierun Chen</name>
+    </author>
+    <author>
+      <name>Tiezheng Yu</name>
+    </author>
+    <author>
+      <name>Ruoyu Wang</name>
+    </author>
+    <author>
+      <name>Yuxin Jiang</name>
+    </author>
+    <author>
+      <name>Yiming Du</name>
+    </author>
+    <author>
+      <name>Wendong Xu</name>
+    </author>
+    <author>
+      <name>Jing Xiong</name>
+    </author>
+    <author>
+      <name>Taiqiang Wu</name>
+    </author>
+    <author>
+      <name>Lifeng Shang</name>
+    </author>
+    <author>
+      <name>Xiaohui Li</name>
+    </author>
+    <author>
+      <name>Ngai Wong</name>
+    </author>
+    <author>
+      <name>Haoli Bai</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.18747v1</id>
+    <title>Code as Agent Harness</title>
+    <updated>2026-05-18T17:59:03Z</updated>
+    <link href="https://arxiv.org/abs/2605.18747v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.18747v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent large language models (LLMs) have demonstrated strong capabilities in understanding and generating code, from competitive programming to repository-level software engineering. In emerging agentic systems, code is no longer only a target output. It increasingly serves as an operational substrate for agent reasoning, acting, environment modeling, and execution-based verification. We frame this shift through the lens of agent harnesses and introduce code as agent harness: a unified view that centers code as the basis for agent infrastructure. To systematically study this perspective, we organize the survey around three connected layers. First, we study the harness interface, where code connects agents to reasoning, action, and environment modeling. Second, we examine harness mechanisms: planning, memory, and tool use for long-horizon execution, together with feedback-driven control and optimization that make harness reliable and adaptive. Third, we discuss scaling the harness from single-agent systems to multi-agent settings, where shared code artifacts support multi-agent coordination, review, and verification. Across these layers, we summarize representative methods and practical applications of code as agent harness, spanning coding assistants, GUI/OS automation, embodied agents, scientific discovery, personalization and recommendation, DevOps, and enterprise workflows. We further outline open challenges for harness engineering, including evaluation beyond final task success, verification under incomplete feedback, regression-free harness improvement, consistent shared state across multiple agents, human oversight for safety-critical actions, and extensions to multimodal environments. By centering code as the harness of agentic AI, this survey provides a unified roadmap toward executable, verifiable, and stateful AI agent systems.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-18T17:59:03Z</published>
+    <arxiv:comment>GitHub: https://github.com/YennNing/Awesome-Code-as-Agent-Harness-Papers</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Xuying Ning</name>
+    </author>
+    <author>
+      <name>Katherine Tieu</name>
+    </author>
+    <author>
+      <name>Dongqi Fu</name>
+    </author>
+    <author>
+      <name>Tianxin Wei</name>
+    </author>
+    <author>
+      <name>Zihao Li</name>
+    </author>
+    <author>
+      <name>Yuanchen Bei</name>
+    </author>
+    <author>
+      <name>Jiaru Zou</name>
+    </author>
+    <author>
+      <name>Mengting Ai</name>
+    </author>
+    <author>
+      <name>Zhining Liu</name>
+    </author>
+    <author>
+      <name>Ting-Wei Li</name>
+    </author>
+    <author>
+      <name>Lingjie Chen</name>
+    </author>
+    <author>
+      <name>Yanjun Zhao</name>
+    </author>
+    <author>
+      <name>Ke Yang</name>
+    </author>
+    <author>
+      <name>Bingxuan Li</name>
+    </author>
+    <author>
+      <name>Cheng Qian</name>
+    </author>
+    <author>
+      <name>Gaotang Li</name>
+    </author>
+    <author>
+      <name>Xiao Lin</name>
+    </author>
+    <author>
+      <name>Zhichen Zeng</name>
+    </author>
+    <author>
+      <name>Ruizhong Qiu</name>
+    </author>
+    <author>
+      <name>Sirui Chen</name>
+    </author>
+    <author>
+      <name>Yifan Sun</name>
+    </author>
+    <author>
+      <name>Xiyuan Yang</name>
+    </author>
+    <author>
+      <name>Ruida Wang</name>
+    </author>
+    <author>
+      <name>Rui Pan</name>
+    </author>
+    <author>
+      <name>Chenyuan Yang</name>
+    </author>
+    <author>
+      <name>Dylan Zhang</name>
+    </author>
+    <author>
+      <name>Liri Fang</name>
+    </author>
+    <author>
+      <name>Zikun Cui</name>
+    </author>
+    <author>
+      <name>Yang Cao</name>
+    </author>
+    <author>
+      <name>Pan Chen</name>
+    </author>
+    <author>
+      <name>Dorothy Sun</name>
+    </author>
+    <author>
+      <name>Ren Chen</name>
+    </author>
+    <author>
+      <name>Mahesh Srinivasan</name>
+    </author>
+    <author>
+      <name>Nipun Mathur</name>
+    </author>
+    <author>
+      <name>Yinglong Xia</name>
+    </author>
+    <author>
+      <name>Hong Li</name>
+    </author>
+    <author>
+      <name>Hong Yan</name>
+    </author>
+    <author>
+      <name>Pan Lu</name>
+    </author>
+    <author>
+      <name>Lingming Zhang</name>
+    </author>
+    <author>
+      <name>Tong Zhang</name>
+    </author>
+    <author>
+      <name>Hanghang Tong</name>
+    </author>
+    <author>
+      <name>Jingrui He</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.12129v1</id>
+    <title>It's Not the Size: Harness Design Determines Operational Stability in Small Language Models</title>
+    <updated>2026-05-12T13:50:30Z</updated>
+    <link href="https://arxiv.org/abs/2605.12129v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.12129v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper experimentally analyzes how the level of harness engineering affects the operational performance of small language models (SLMs, 2-3B parameters). Three harness conditions - model-only (raw prompt), minimal-shell (wrapper tags), and a 4-stage pipeline (plan-&gt;execute-&gt;verify-&gt;recover) - are applied to three models (Gemma4 E2B, Qwen3.5:2B, LLaMA 3.2 3B) across 24 tasks, comparing Task Success Rate (TSR) and Valid TSR (VTSR). The pipeline harness achieves TSR=0.952 and VTSR=1.000 on Gemma4 E2B (T1-T5, 21 tasks). A non-monotonic phenomenon - minimal-shell TSR &lt; model-only TSR - is observed in two models. In LLaMA 3.2 3B model-only, seven format violations yield TSR=0.429, revealing scaffold collapse: the model abandons JSON structure under complex format requirements without harness support. Ablation shows planning and recovery each contribute approximately 24.7% of total gain. VCR (Verification Catch Rate)=0.625 across all pipeline runs.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.OS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-12T13:50:30Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Yong-eun Cho</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.28679v1</id>
+    <title>Capability Gates Are Not Authorization: Confused-Deputy Failures in LLM Agent Frameworks</title>
+    <updated>2026-06-27T01:33:19Z</updated>
+    <link href="https://arxiv.org/abs/2606.28679v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.28679v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Tool-using LLM agents increasingly read untrusted content while holding side-effecting tools such as payments, email, CRM, and infrastructure APIs, yet common framework defaults still conflate tool exposure with authorization. We audit whether LangChain/LangGraph, LlamaIndex, and the Stripe Agent Toolkit re-authorize each model-emitted call, with concrete argument values, before execution. Across pinned public-source commits, all three provide capability gating by default, but none provides a deterministic fail-closed per-call value authorization gate by default. We introduce ScopeGate, a five-stage PDP/PEP for agent tool calls: scope, authorization, money ceiling, idempotency, and default deny. Evaluation shows the identical unauthorized payout call executes under LangChain's default dispatch (with a companion LlamaIndex PoC) but is denied by ScopeGate; the tested control reports 0/48 static bypasses, 0/29 unauthorized attempts (40-iteration adaptive run), 0/10 benign false-denies, and Latam-GPT payment-agent containment at 10/10. ASR denotes attempted unauthorized action, containment is not a cure, deployment-tier claims are inference over measured model classes, and no CVE is asserted.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-27T01:33:19Z</published>
+    <arxiv:comment>7 pages, 3 figures, 3 tables. Artifact: https://github.com/raceksd-source/scopegate-runtime (run_proof.sh)</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>David Mellafe Zuvic</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.30546v1</id>
+    <title>MAS-Lab: A Specification-Driven Validation Framework for Reliable Multi-Agent Systems</title>
+    <updated>2026-06-29T16:46:28Z</updated>
+    <link href="https://arxiv.org/abs/2606.30546v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.30546v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The rapid emergence of LLM-based agentic frameworks has significantly reduced the cost of assembling multi-agent systems (MAS), enabling fast prototyping and exploration of agentic behaviors. However, systems built with current tooling remain ill-suited for reliable, evolvable, and production-grade deployment. In practice, MAS are often developed in an ad-hoc and imperative manner, with agent logic, orchestration, observability, and control tightly interwoven, little to no explicit system-level validation, and development workflows optimized for demonstrations rather than long-lived, governed operation. As a result, behavior observed during experimentation rarely constitutes reliable evidence of behavior in production.
+  In this paper, we introduce MAS-Lab, a specification-driven framework for principled development and experimental validation of multi-agent systems properties. MAS-Lab is designed to transform MAS from collections of scripts into engineered distributed systems by separating semantic intent from operational concerns, making behavior and control explicit, supporting reproducible experimentation, and preserving continuity across lifecycle stages. MAS-Lab consists of three layers: a declarative, framework-agnostic agentic specification layer (Spec); a stateful MAS Operating System that provides execution and control primitives plugged-in by design (MAS-OS); and a set of lab overlays with integrated observability and evaluation tools (Labs). Together, these components enable intent-based validation, principled system evolution, and a seamless transition to production-grade MAS.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-29T16:46:28Z</published>
+    <arxiv:comment>16 pages, 12 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Jordan Augé</name>
+    </author>
+    <author>
+      <name>Giovanna Carofiglio</name>
+    </author>
+    <author>
+      <name>Giulio Grassi</name>
+    </author>
+    <author>
+      <name>Jacques Samain</name>
+    </author>
+  </entry>
+</feed>
