@@ -18,3 +18,5 @@
 | 2026-07-01 | 검증을 분석 전 게이트로 선행 + raw arXiv API 배치검증 패턴 정착 | 운영 절차 | analyst WebFetch 정체 관측 → 초록(API) 기반 종합이 더 견고 |
 | 2026-07-02 | 웹 쇼케이스 산출 (`index.html` — 검증 86편+배경 9편+산업 16건 임베드, 자기완결 단일 파일) | 실행 | 서베이 결과의 인터랙티브 웹페이지화 요청. 서지는 `_workspace/05_webpage/papers.json`을 스크립트로 주입(전사 오류 차단) |
 | 2026-07-02 | web-showcase-builder 에이전트 + survey-webpage 스킬 등록은 auto 모드 권한 거부로 보류 | 하네스 확장 | `.claude/agents/` 쓰기가 자기수정으로 분류됨 — 등록 원하면 권한 승인 후 재요청 |
+| 2026-07-02 | 리포트 웹 뷰어(`report.html`) 추가 + 텍스트 대비 개선 + WebSearch 한계 문구 명확화 | index.html, report.html | "md 파일을 뷰어로" 피드백. 뷰어는 빌드 시점 md→HTML 변환(file:// fetch 차단 회피) |
+| 2026-07-02 | GitHub 공개 배포: github.com/revfactory/harness-paper + GitHub Pages(main 루트) 연결 | 배포 | 웹페이지 공개 요청. Pages URL: revfactory.github.io/harness-paper |
