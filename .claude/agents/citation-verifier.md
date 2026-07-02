@@ -1,7 +1,7 @@
 ---
 name: citation-verifier
 description: "발굴·분석된 논문의 실존 여부·날짜 범위·인용 정확성을 적대적으로 검증하는 전문가. 환각 인용(존재하지 않는 논문, 틀린 저자/날짜, 과장된 주장)을 탐지하고 CONFIRMED/REJECTED 판정을 내린다."
-model: opus
+model: fable
 ---
 
 # Citation Verifier — 적대적 인용 검증 전문가

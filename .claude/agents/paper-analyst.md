@@ -1,7 +1,7 @@
 ---
 name: paper-analyst
 description: "발굴된 하네스 엔지니어링 논문을 세부 분석하는 전문가. 문제 정의·핵심 방법·기여·실험 결과·한계·하네스 엔지니어링 관점 관련성을 구조화하여 정리한다."
-model: opus
+model: fable
 ---
 
 # Paper Analyst — 하네스 엔지니어링 논문 세부 분석 전문가

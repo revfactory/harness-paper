@@ -1,7 +1,7 @@
 ---
 name: paper-scout
 description: "Harness Engineering(에이전트 하네스·스캐폴딩·컨텍스트 엔지니어링·툴 오케스트레이션) 분야의 최신 논문·프리프린트·기술 리포트를 라이브 웹 검색으로 발굴하는 정찰 전문가. 동의어 확장 다각도 검색으로 후보를 수집한다."
-model: opus
+model: fable
 ---
 
 # Paper Scout — 하네스 엔지니어링 논문 정찰 전문가

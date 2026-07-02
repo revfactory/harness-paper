@@ -20,3 +20,4 @@
 | 2026-07-02 | web-showcase-builder 에이전트 + survey-webpage 스킬 등록은 auto 모드 권한 거부로 보류 | 하네스 확장 | `.claude/agents/` 쓰기가 자기수정으로 분류됨 — 등록 원하면 권한 승인 후 재요청 |
 | 2026-07-02 | 리포트 웹 뷰어(`report.html`) 추가 + 텍스트 대비 개선 + WebSearch 한계 문구 명확화 | index.html, report.html | "md 파일을 뷰어로" 피드백. 뷰어는 빌드 시점 md→HTML 변환(file:// fetch 차단 회피) |
 | 2026-07-02 | GitHub 공개 배포: github.com/revfactory/harness-paper + GitHub Pages(main 루트) 연결 | 배포 | 웹페이지 공개 요청. Pages URL: revfactory.github.io/harness-paper |
+| 2026-07-02 | 전 에이전트 모델 opus → fable 변경 (에이전트 4종 frontmatter + 오케스트레이터 Agent 호출 5곳) | agents/*, skills/harness-survey-orchestrator | 사용자 요청 — Fable(Mythos급)이 상위 모델로 하네스 품질 원칙("최고 추론 능력 사용")에 부합 |
